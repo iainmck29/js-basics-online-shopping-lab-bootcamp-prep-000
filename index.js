@@ -30,6 +30,11 @@ function viewCart() {
 var printTwoItems = `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
 return printTwoItems
 
+} else if (cart.length === 3) {
+  var printThreeItems = `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, ${getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
+  return printThreeItems
+}
+
 
 } else {
   for (var i = 0; i < cart.length-1; i++)
