@@ -35,18 +35,8 @@ return printTwoItems
   return printThreeItems
 }
 
+} 
 
-} else {
-  for (var i = 0; i < cart.length-1; i++)
-  {
-    //console.log(cart[i]);
-    cartItems.push(` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`);
-  }
-
-  var printThreeOrMoreItems = `In your cart, you have${cartItems}, and ${Object.keys(cart[cart.length-1])} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}.`
-  return printThreeOrMoreItems;
-}
-}
 
 function total() {
   var price = 0;
