@@ -23,7 +23,7 @@ function viewCart() {
     return 'Your shopping cart is empty.'
 
   } else if (cart.length === 1) {
-    var printOneItem = `In your cart, you have ${cart['itemName']} at ${cart['itemPrice']}.`
+    var printOneItem = `In your cart, you have ${getCart()[0].itemName} at ${getCart()[0].itemPrice}.`
    return printOneItem
 
   } else if (cart.length === 2) {
