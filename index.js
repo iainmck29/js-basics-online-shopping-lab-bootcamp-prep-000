@@ -35,7 +35,7 @@ return printTwoItems
   return printThreeItems
 }
 
-} 
+}
 
 
 function total() {
