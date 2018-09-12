@@ -27,7 +27,7 @@ function viewCart() {
    return printOneItem
 
   } else if (cart.length === 2) {
-var printTwoItems = `In your cart, you have ${Object.itemName(cart[cart.length-2])} at $${cart[cart.length-2][Object.itemPrice(cart[cart.length-2])]} and ${Object.keys(cart[cart.length-1])} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}.`
+var printTwoItems = `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice} and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
 return printTwoItems
 
 
